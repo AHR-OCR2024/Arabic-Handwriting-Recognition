@@ -1,9 +1,20 @@
-Here's a comprehensive README for your GitHub project:
-
-
 # Arabic Handwriting Recognition 🖋️
 
 Welcome to the Arabic Handwriting Recognition project! This repository consolidates all the code and data used in our endeavor to create an effective OCR (Optical Character Recognition) system for Arabic script.
+
+This project is proudly made by:
+
+1. Abanoub Aaid
+2. Ahmed Nagah
+3. Ahmed Taha
+4. Ayman Saber
+5. Kerollos
+6. Mohamed Abdelfattah
+7. Mohamed Fathi
+8. Nada Asran
+9. Nada Mahmoud
+10. Rawan
+11. Reem Fouad
 
 ## Table of Contents
 - [Introduction](#introduction)
