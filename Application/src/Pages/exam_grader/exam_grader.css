@@ -1,0 +1,18 @@
+/* src/Pages/exam_grader/exam_grader.css */
+@media (min-width: 768px) {
+  .md\\:flex-row {
+    flex-direction: row;
+  }
+  .md\\:items-start {
+    align-items: flex-start;
+  }
+  .md\\:justify-between {
+    justify-content: space-between;
+  }
+  .md\\:w-1\\/2 {
+    width: 50%;
+  }
+  .md\\:mt-0 {
+    margin-top: 0;
+  }
+}

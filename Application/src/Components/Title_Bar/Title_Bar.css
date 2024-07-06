@@ -1,0 +1,13 @@
+.title-bar {
+  background-color: #07522f; /* Green background */
+  opacity: 0.7;
+  color: white; /* White text */
+  padding: 10px 70px; /* Some padding */
+  text-align: center; /* Centered text */
+  border-radius: 50px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below the title bar */
+}
+
+.title-bar p {
+  margin: 0; /* Remove default margin */
+}

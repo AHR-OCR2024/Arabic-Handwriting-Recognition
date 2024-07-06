@@ -1,0 +1,66 @@
+/* Home.css */
+
+/* .home-main {
+  text-align: center;
+  padding: 20px;
+}
+.home-main h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.home-main p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1;
+} */
+.home-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.home-service {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+  min-height: 180px;
+  min-width: 280px;
+  height: 100%;
+}
+.home-service img {
+  height: 140px;
+  width: 140px;
+  padding-top: 20px;
+  opacity: 0.7;
+}
+
+.home-logo {
+  height: 200px;
+}
+
+.home-service-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #387771;
+}
+/* Responsive styles */
+@media (max-width: 600px) {
+  .home-services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-service {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home-services {
+    flex-direction: column;
+  }
+}

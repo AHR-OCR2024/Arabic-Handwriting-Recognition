@@ -1,0 +1,10 @@
+python ./Backend/Backend.py
+
+pnpm dev --host
+
+ngrok start api
+OR
+ngrok start --all
+
+#ngrok http http://172.16.5.4:5173 --domain=lynx-upright-allegedly.ngrok-free.app
+#ngrok http http://172.16.5.4:5000 --domain=lynx-upright-allegedly.ngrok-free.app

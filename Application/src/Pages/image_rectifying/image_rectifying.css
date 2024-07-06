@@ -1,0 +1,25 @@
+.mainLayout_rec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* .image_rectifying {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.image_rectifying .title-bar {
+  margin-bottom: 20px;
+}
+
+.image_rectifying .image-uploader {
+  margin-bottom: 20px;
+}
+
+.image_rectifying .recognize-button {
+  margin-top: 20px;
+} */

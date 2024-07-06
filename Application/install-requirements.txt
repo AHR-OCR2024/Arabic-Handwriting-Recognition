@@ -1,0 +1,16 @@
+Flask==3.0.3
+Flask_Cors==4.0.1
+google_cloud_aiplatform==1.58.0
+keras==2.12.0
+keras_ocr==0.9.3
+numpy==1.23.5
+opencv_python==4.10.0.84
+Pillow==10.4.0
+protobuf==5.27.2
+skimage==0.0
+tensorflow==2.12.0
+timm==1.0.7
+torch==2.3.1+cpu
+torchvision==0.18.1+cpu
+waitress==3.0.0
+distutils

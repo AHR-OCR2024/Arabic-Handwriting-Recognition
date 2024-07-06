@@ -1,0 +1,60 @@
+@mixin rounded-table-borders($border, $radius) {
+  border-radius: $radius;
+  border-spacing: 0;
+  border: $border;
+  border-collapse: inherit;
+  background-color: black;
+
+  th,
+  td {
+    border: $border;
+  }
+
+  tr + tr th,
+  tr + tr td {
+    border-top: 0;
+  }
+
+  th + th,
+  th + td,
+  td + th,
+  td + td {
+    border-left: 0;
+  }
+
+  th:first-child,
+  td:first-child {
+    border-left: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    border-right: 0;
+    width: 8vw;
+    text-align: center;
+  }
+
+  tr:first-child th,
+  tr:first-child td {
+    border-top: 0;
+  }
+
+  tr:last-child th,
+  tr:last-child td {
+    border-bottom: 0;
+  }
+  img {
+    border-radius: $radius;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  thead th {
+    border-bottom: 2px solid #ffffff !important;
+  }
+}
+
+table.rounded-table-borders {
+  @include rounded-table-borders(1px solid rgb(255, 255, 255), 10px);
+}

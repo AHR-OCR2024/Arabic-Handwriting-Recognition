@@ -1,0 +1,49 @@
+table.rounded-table-borders {
+  border-radius: 10px;
+  border-spacing: 0;
+  border: 1px solid rgb(180, 180, 180);
+  border-collapse: inherit;
+  background-color: #e9e9e9;
+}
+table.rounded-table-borders th,
+table.rounded-table-borders td {
+  border: 1px solid rgb(180, 180, 180);
+}
+table.rounded-table-borders tr + tr th,
+table.rounded-table-borders tr + tr td {
+  border-top: 0;
+}
+table.rounded-table-borders th + th,
+table.rounded-table-borders th + td,
+table.rounded-table-borders td + th,
+table.rounded-table-borders td + td {
+  border-left: 0;
+}
+table.rounded-table-borders th:first-child,
+table.rounded-table-borders td:first-child {
+  border-left: 0;
+}
+table.rounded-table-borders th:last-child,
+table.rounded-table-borders td:last-child {
+  border-right: 0;
+  width: 8vw;
+  text-align: center;
+}
+table.rounded-table-borders tr:first-child th,
+table.rounded-table-borders tr:first-child td {
+  border-top: 0;
+}
+table.rounded-table-borders tr:last-child th,
+table.rounded-table-borders tr:last-child td {
+  border-bottom: 0;
+}
+table.rounded-table-borders img {
+  border-radius: 10px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+table.rounded-table-borders thead th {
+  border-bottom: 1px solid rgb(180, 180, 180) !important;
+}

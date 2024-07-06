@@ -1,0 +1,29 @@
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-icon {
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.sidebar-title {
+  font-size: 1.3em;
+  color: #387771;
+  font-weight: 550;
+  text-align: center;
+}
+
+.sidebar-content {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.sidebar p {
+  margin: 10px 0;
+}

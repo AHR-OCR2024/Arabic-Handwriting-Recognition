@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+:root {
+  --font-family: "Alexandria", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --color: #3b3b3b;
+  --background-color: #f7f7f7;
+  --font-weight-link: 500;
+  --color-link: #272727;
+  --color-link-hover: #000000;
+  --font-size-h1: 3.2em;
+  --line-height-h1: 1.1;
+  --border-radius-button: 50px;
+  --border-button: 1px solid transparent;
+  --padding-button: 0.4em 1.2em;
+  --font-size-button: 1em;
+  --font-weight-button: 500;
+  --background-color-button: #07522f;
+  --background-color-button-hover: #0a703f;
+  --background-color-button-active: #004725;
+  --transition-button: 0.5s;
+  --transition-button-active: 0.25s;
+  --padding-bottom-main-content: 5em;
+
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color: var(--color);
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: var(--font-weight-link);
+  color: var(--color-link);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+}
+
+button {
+  border-radius: var(--border-radius-button);
+  border: var(--border-button);
+  padding: var(--padding-button);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-button);
+  font-family: inherit;
+  background-color: var(--background-color-button);
+  cursor: pointer;
+  transition: var(--transition-button);
+  color: white;
+}
+
+button a {
+  color: white;
+}
+
+button:hover {
+  background-color: var(--background-color-button-hover);
+  transition: var(--transition-button);
+}
+
+button:active {
+  background-color: var(--background-color-button-active);
+  transition: var(--transition-button-active);
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: var(--padding-bottom-main-content);
+}

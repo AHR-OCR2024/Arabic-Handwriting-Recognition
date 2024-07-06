@@ -1,0 +1,28 @@
+/* RecognizeButton.css */
+.recognize-button {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.select-model,
+.checkbox-label {
+  display: block;
+  margin: 10px 0;
+}
+
+.select-model select,
+.checkbox-label input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input {
+  margin-right: 10px;
+}

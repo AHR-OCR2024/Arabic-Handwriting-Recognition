@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #07522f;
+  padding: 10px 20px;
+  height: 100%;
+}
+
+/* @media screen and (max-width: 815px) {
+  .header {
+    justify-content: start;
+  }
+} */
+
+.logo {
+  width: 30vmin;
+  height: 22vmin;
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.home-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-nav li {
+  margin-right: 20px;
+}
+
+@media (max-width: 815px) {
+  .header {
+    justify-content: center; /* Center the logo on mobile */
+    position: relative; /* Allow absolute positioning of the menu button */
+  }
+
+  .menu-button {
+    display: block;
+    position: absolute; /* Position the menu button absolutely */
+    left: 10px; /* Adjust as needed */
+  }
+
+  .home-nav {
+    display: none;
+    gap: 0px;
+    padding: 10px;
+  }
+
+  .modal-content .home-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-content .home-nav li {
+    margin: 5px;
+  }
+}
+
+.header li {
+  text-align: center;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+/* .home-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.home-nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.home-nav a:hover {
+  color: #afafaf;
+  transition: color 0.5s ease;
+} */

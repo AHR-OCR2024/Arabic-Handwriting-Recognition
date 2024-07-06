@@ -1,0 +1,33 @@
+ProductionWorker Class
+class ProductionWorker : public Employee {
+public:
+// Shift constants
+static const int DAY_SHIFT = 1;
+static const int NIGHT_SHIFT = 2;
+// Default constructor
+ProductionWorker() {
+shift =
+DAY SHIFT; //shift = 1
+hourly Pay Rate
+=
+0.0;
+}
+// Parameterized constructor
+ProductionWorker(string name, int number, string hireDate, int shift, double
+hourly Pay Rate)
+}
+: Employee (name, number, hireDate) {
+this->shift = shift;
+this->hourly Pay Rate = hourly Pay Rate;
+// Accessor functions
+int getShift() const {return shift; }
+double getHourly Pay Rate () const {return hourly Pay Rate;}
+// Mutator functions
+void setShift(int shift) {this->shift = shift; }
+void setHourly Pay Rate (double hourly Pay Rate) {this->hourly Pay Rate
+hourlyPayRate;}
+private:
+int shift;
+double hourly Pay Rate;
+=
+};

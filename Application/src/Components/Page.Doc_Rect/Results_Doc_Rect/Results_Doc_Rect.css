@@ -1,0 +1,49 @@
+table.doc-rect-rounded-table-borders {
+  border-radius: 10px;
+  border-spacing: 0;
+  border: 1px solid rgb(255, 255, 255);
+  border-collapse: inherit;
+  background-color: black;
+}
+table.doc-rect-rounded-table-borders th,
+table.doc-rect-rounded-table-borders td {
+  border: 1px solid rgb(255, 255, 255);
+}
+table.doc-rect-rounded-table-borders tr + tr th,
+table.doc-rect-rounded-table-borders tr + tr td {
+  border-top: 0;
+}
+table.doc-rect-rounded-table-borders th + th,
+table.doc-rect-rounded-table-borders th + td,
+table.doc-rect-rounded-table-borders td + th,
+table.doc-rect-rounded-table-borders td + td {
+  border-left: 0;
+}
+table.doc-rect-rounded-table-borders th:first-child,
+table.doc-rect-rounded-table-borders td:first-child {
+  border-left: 0;
+}
+table.doc-rect-rounded-table-borders th:last-child,
+table.doc-rect-rounded-table-borders td:last-child {
+  border-right: 0;
+  width: 8vw;
+  text-align: center;
+}
+table.doc-rect-rounded-table-borders tr:first-child th,
+table.doc-rect-rounded-table-borders tr:first-child td {
+  border-top: 0;
+}
+table.doc-rect-rounded-table-borders tr:last-child th,
+table.doc-rect-rounded-table-borders tr:last-child td {
+  border-bottom: 0;
+}
+table.doc-rect-rounded-table-borders img {
+  border-radius: 10px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+table.doc-rect-rounded-table-borders thead th {
+  border-bottom: 2px solid #ffffff !important;
+}

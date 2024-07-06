@@ -1,0 +1,76 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-overlay-before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.modal-content {
+  /* position: relative; */
+  position: absolute;
+  top: 25vh;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.096);
+  padding: 20px;
+  color: white;
+  backdrop-filter: blur(20px);
+  max-width: 50%;
+  overflow-wrap: break-word;
+  z-index: 1000;
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.close-icon {
+  /* border: none; */
+  overflow: hidden;
+  font-size: 20px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.096);
+  backdrop-filter: blur(10px);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border: #ffffff13 1px solid;
+}
+
+.close-icon:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+  border: none;
+  border: #ffffff13 1px solid;
+}
+
+.close-icon:active {
+  border-radius: 40%;
+  background-color: rgba(255, 255, 255, 0.158);
+  transition: 0.3s;
+}
