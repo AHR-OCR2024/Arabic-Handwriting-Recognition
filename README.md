@@ -1,3 +1,7 @@
+
+![ضاد الرقمية أيقونة](https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition/assets/169726054/4bcbec06-9ac7-44a8-ad9c-dc3a7c6e13f4)
+
+
 # Arabic Handwriting Recognition 🖋️
 
 Welcome to the Arabic Handwriting Recognition project! This repository consolidates all the code and data used in our endeavor to create an effective OCR (Optical Character Recognition) system for Arabic script.
