@@ -70,22 +70,28 @@ The dataset used in this project is included in the repository. It contains a va
 Preprocessing is a critical stage in the development of our Arabic handwriting recognition system. The goal is to enhance the quality of the input data to ensure accurate recognition. Here are the main steps involved in our preprocessing pipeline:
 
 1. **Image Acquisition**: We collect images of handwritten Arabic text from various sources, including scanned documents and photos taken by digital cameras.
-   ![Acquired Image](https://github.com/user-attachments/assets/4a9c7f02-2ae9-46b1-965b-0dbb305202ce)
+   <p align="center">
+     <img src="https://github.com/user-attachments/assets/4a9c7f02-2ae9-46b1-965b-0dbb305202ce" alt="Acquired Image" width="300"/>
+   </p>
 
 2. **Geometric Correction**: We correct distortions and warping in the images. Techniques like Hough Line Transform and DocTr (Document Image Transformer) are used to straighten the text lines.
 
 3. **Noise Removal**: We apply filters to remove noise and enhance the clarity of the text. This includes techniques like Gaussian blur and median filtering.
-  ![image](https://github.com/user-attachments/assets/5ff48966-40f4-498b-8923-cc5a144482c6)
-  *Unwarped and filtered image*
-
+   <p align="center">
+     <img src="https://github.com/user-attachments/assets/5ff48966-40f4-498b-8923-cc5a144482c6" alt="image" width="300"/>
+   </p>
+   *Unwarped and filtered image*
 
 5. **Segmentation**: We segment the images into paragraphs, lines, and individual characters. This involves methods like histogram projection and CRAFT (Character Region Awareness for Text Detection).
-  ![image](https://github.com/user-attachments/assets/667f307b-6df3-452e-92f8-c23e66cf040f)
-  *Segmented text using CRAFT*
-
+   <p align="center">
+     <img src="https://github.com/user-attachments/assets/667f307b-6df3-452e-92f8-c23e66cf040f" alt="image" width="300"/>
+   </p>
+   *Segmented text using CRAFT*
 
 7. **Normalization**: We normalize the images to a fixed size (64x64) and rescale the pixel values to the range [0, 1] by dividing by 255.0.
-   ![Final Results](https://github.com/user-attachments/assets/1e22848e-7ee9-4b76-abee-00d69695c854)
+   <p align="center">
+     <img src="https://github.com/user-attachments/assets/1e22848e-7ee9-4b76-abee-00d69695c854" alt="Final Results" width="300"/>
+   </p>
    *Example of Final Results*
 
 ## AI Training
