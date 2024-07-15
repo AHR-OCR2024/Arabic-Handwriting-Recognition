@@ -7,8 +7,9 @@ Welcome to the Arabic Handwriting Recognition project! This repository consolida
 
 This project is proudly made by:
 
-| Ahmed Taha         | Ayman Saber        |
+|                    |                    |
 |--------------------|--------------------|
+| Ahmed Taha         | Ayman Saber        |
 | Ahmed Nagah        | Abanoub Aied       |
 | Kerollos Samir     | Mohamed Abdelfattah|
 | Mohamed Fathi      | Nada Asran         |
@@ -23,6 +24,8 @@ This project is proudly made by:
 - [Data](#data)
 - [Preprocessing](#preprocessing)
 - [AI Training](#aitraining)
+- [Full System Diagram](#fullsystemdiagram)
+- [Digital-Ḍād ض-الرقمية](#digital-Ḍād)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -140,7 +143,41 @@ We use Character Error Rate (CER) and accuracy as our primary evaluation metrics
    <br>
      <em>ResNet50V2 (Pre-Trained on Alphabet) Performance Throughout the Epochs</em>
 </p>
-   
+
+## Full System Diagram
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/95e18c1f-969d-48c5-a584-85e50b45d467" alt="Diagram" width="300"/>
+   <br>
+     <em>The Flow of Our System</em>
+</p>
+
+## Digital-Ḍād ض-الرقمية
+Our application provides a variety of services and models:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5cbaed0c-9a78-4f2e-b6d7-f262328bf529" alt="MainPage" width="300"/>
+   <br>
+     <em>Main Page of Our Application</em>
+</p>
+
+1. **Handwriting OCR**: Utilizing our model simply taking an image of a paragraph written by handwriting, preprocessing the paragraph, and finally performing ocr on the resulting segmented words or sub-words
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/557d9d83-c279-46c4-822f-666b5919275b" alt="OCRModel" width="300"/>
+   <br>
+     <em>Handwriting OCR Model</em>
+</p>
+
+2. **Exam Grading**: We pass questiong with their specific answers to the model, and utilizing our OCR methodology alongside a LLM with api, we scan the answers written by a student giving it a grade.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/de932111-2937-423b-9a42-c696a2706d58" alt="ExamGrader" width="300"/>
+   <br>
+     <em>Exam Grader Model</em>
+</p>
+
+3. **Document Scanner**: Simply scanning an image of a document written by handwriting, performing OCR on it and then assembling the resulting text using a LLM, creating a full digitized version of the document.
+
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
 1. Fork the repository.
