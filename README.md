@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/725887d7-2bd8-4832-8918-50ecfa5cf5d6)
 ![ضاد الرقمية أيقونة](https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition/assets/169726054/4bcbec06-9ac7-44a8-ad9c-dc3a7c6e13f4)
 
 
