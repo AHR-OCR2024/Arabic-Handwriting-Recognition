@@ -103,7 +103,7 @@ Preprocessing is a critical stage in the development of our Arabic handwriting r
 
 The AI training phase involves developing and training deep learning models to recognize and digitize handwritten Arabic text. Here are the key components of our AI training process:
 
-Prototype Model Experimentation
+1. **Prototype Model Experimentation**
 We experimented with three different architectures on a small portion of the data (15,477 Samples) at first to identify the most effective model for our Arabic handwriting recognition system. The comparison of the results is shown in the table below:
 
 | Architecture   | CER  | Accuracy |
@@ -118,21 +118,21 @@ We experimented with three different architectures on a small portion of the dat
      <em>ResNet152 Performance Throughout the Epochs</em>
 </p>
 
-Dataset Preparation
+2. **Dataset Preparation**
 We use a combination of the Arabic Alphabet Character dataset and the KHATT dataset. The combined final dataset includes 108,619 samples.
 
-Data Augmentation</strong></p>
+3. **Data Augmentation**
 To improve the robustness of our model, we apply various data augmentation techniques, such as rotation, translation, and scaling.
 
-Model Architecture</strong></p>
+4. **Model Architecture**
 We utilize the ResNet50V2 model, pre-trained on the Arabic Alphabet Character dataset. We then continue training on the KHATT dataset using advanced techniques.
 
-Training Techniques</strong></p>
+5. **Training Techniques**
 - **Optimizer**: We use the Adam optimizer with specific parameters for efficient training.
 - **Learning Rate Scheduler**: A cosine learning rate scheduler is employed to adjust the learning rate dynamically during training.
 - **Training Duration**: The model is trained across 70 epochs to ensure convergence and optimal performance.
 
-Evaluation Metrics</strong></p>
+6. **Evaluation Metrics**
 We use Character Error Rate (CER) and accuracy as our primary evaluation metrics. Our final model achieved a CER of 3% and an accuracy of 97% on the test set.
 
 <p align="center">
