@@ -8,6 +8,7 @@ Welcome to the Arabic Handwriting Recognition project! This repository consolida
 
 This project is proudly made by:
 
+|                                         |
 |--------------------|--------------------|
 | Ahmed Taha         | Ayman Saber        |
 | Ahmed Nagah        | Abanoub Aied       |
