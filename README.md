@@ -78,22 +78,26 @@ Preprocessing is a critical stage in the development of our Arabic handwriting r
 
 3. **Noise Removal**: We apply filters to remove noise and enhance the clarity of the text. This includes techniques like Gaussian blur and median filtering.
    <p align="center">
-     <img src="https://github.com/user-attachments/assets/5ff48966-40f4-498b-8923-cc5a144482c6" alt="image" width="300"/>
+     <img src="https://github.com/user-attachments/assets/5ff48966-40f4-498b-8923-cc5a144482c6" alt="Noise Removal" width="300"/>
+     <br>
+     <em>Unwarped and filtered image</em>
    </p>
-   *Unwarped and filtered image*
+   
 
 5. **Segmentation**: We segment the images into paragraphs, lines, and individual characters. This involves methods like histogram projection and CRAFT (Character Region Awareness for Text Detection).
    <p align="center">
      <img src="https://github.com/user-attachments/assets/667f307b-6df3-452e-92f8-c23e66cf040f" alt="image" width="300"/>
+   <br>
+     <em>Segmented text using CRAFT</em>
    </p>
-   *Segmented text using CRAFT*
 
 7. **Normalization**: We normalize the images to a fixed size (64x64) and rescale the pixel values to the range [0, 1] by dividing by 255.0.
    <p align="center">
      <img src="https://github.com/user-attachments/assets/1e22848e-7ee9-4b76-abee-00d69695c854" alt="Final Results" width="300"/>
+   <br>
+     <em>Final Results</em>
    </p>
-   *Example of Final Results*
-
+   
 ## AI Training
 
 The AI training phase involves developing and training deep learning models to recognize and digitize handwritten Arabic text. Here are the key components of our AI training process:
@@ -109,8 +113,9 @@ We experimented with three different architectures on a small portion of the dat
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9bf2af20-2e08-446f-8042-abe3f27e161e" alt="ResNet152" width="300"/>
+   <br>
+     <em>ResNet152 Performance Throughout the Epochs</em>
 </p>
-*Resnet152 performance throughout the epochs*
 
 <p align="center"><strong>Dataset Preparation</strong></p>
 We use a combination of the Arabic Alphabet Character dataset and the KHATT dataset. The combined final dataset includes 108,619 samples.
@@ -131,9 +136,9 @@ We use Character Error Rate (CER) and accuracy as our primary evaluation metrics
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c55f5318-3e1b-49ec-9fa8-d33ecaf92781" alt="ResNet50V2" width="300"/>
+   <br>
+     <em>ResNet50V2 (Pre-Trained on Alphabet) Performance Throughout the Epochs</em>
 </p>
-*ResNet50V2 performance throughout the epochs*
-
    
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
