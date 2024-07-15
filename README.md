@@ -131,7 +131,13 @@ To improve the robustness of our model, we apply various data augmentation techn
 4. **Model Architecture**
 We utilize the ResNet50V2 model, pre-trained on the Arabic Alphabet Character dataset. We then continue training on the KHATT dataset using advanced techniques.
 
-5. **Training Techniques**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/778f4236-8eb4-422d-9dc7-df789b6ce9ef" alt="ResNet50V2Alphabet" width="400"/>
+   <br>
+     <em>ResNet50V2 Performance on Alphabet Dataset</em>
+</p>
+
+6. **Training Techniques**
 - **Optimizer**: We use the Adam optimizer with specific parameters for efficient training.
 - **Learning Rate Scheduler**: A cosine learning rate scheduler is employed to adjust the learning rate dynamically during training.
 - **Training Duration**: The model is trained across 70 epochs to ensure convergence and optimal performance.
