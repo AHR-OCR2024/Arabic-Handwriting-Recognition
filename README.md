@@ -98,32 +98,42 @@ Preprocessing is a critical stage in the development of our Arabic handwriting r
 
 The AI training phase involves developing and training deep learning models to recognize and digitize handwritten Arabic text. Here are the key components of our AI training process:
 
-1. **Prototype Model Experimentation**:
-   We experimented with three different architectures on a small portion of the data (15,477 Samples) at first to identify the most effective model for our Arabic handwriting recognition system. The comparison of the results is shown in the table below:
+<p align="center"><strong>1. Prototype Model Experimentation:</strong></p>
+We experimented with three different architectures on a small portion of the data (15,477 Samples) at first to identify the most effective model for our Arabic handwriting recognition system. The comparison of the results is shown in the table below:
 
-   | Architecture   | CER  | Accuracy |
-   |----------------|------|----------|
-   | EfficientNet-B1| 7.3% | 92.7%    |
-   | VGG19          | 5.4% | 94.6%    |
-   | ResNet152      | 2.96%| 97.04%   |
-              ![ResNet152](https://github.com/user-attachments/assets/9bf2af20-2e08-446f-8042-abe3f27e161e)
-              *Resnet152 performance throughout the epochs*
+| Architecture   | CER  | Accuracy |
+|----------------|------|----------|
+| EfficientNet-B1| 7.3% | 92.7%    |
+| VGG19          | 5.4% | 94.6%    |
+| ResNet152      | 2.96%| 97.04%   |
 
-   
-2. **Dataset Preparation**: We use a combination of the Arabic Alphabet Character dataset and the KHATT dataset. The combined final dataset includes 108,619 samples.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9bf2af20-2e08-446f-8042-abe3f27e161e" alt="ResNet152" width="300"/>
+</p>
+*Resnet152 performance throughout the epochs*
 
-3. **Data Augmentation**: To improve the robustness of our model, we apply various data augmentation techniques, such as rotation, translation, and scaling.
+<p align="center"><strong>2. Dataset Preparation:</strong></p>
+We use a combination of the Arabic Alphabet Character dataset and the KHATT dataset. The combined final dataset includes 108,619 samples.
 
-4. **Model Architecture**: We utilize the ResNet50V2 model, pre-trained on the Arabic Alphabet Character dataset. We then continue training on the KHATT dataset using advanced techniques.
+<p align="center"><strong>3. Data Augmentation:</strong></p>
+To improve the robustness of our model, we apply various data augmentation techniques, such as rotation, translation, and scaling.
 
-5. **Training Techniques**: 
-   - **Optimizer**: We use the Adam optimizer with specific parameters for efficient training.
-   - **Learning Rate Scheduler**: A cosine learning rate scheduler is employed to adjust the learning rate dynamically during training.
-   - **Training Duration**: The model is trained across 70 epochs to ensure convergence and optimal performance.
+<p align="center"><strong>4. Model Architecture:</strong></p>
+We utilize the ResNet50V2 model, pre-trained on the Arabic Alphabet Character dataset. We then continue training on the KHATT dataset using advanced techniques.
 
-6. **Evaluation Metrics**: We use Character Error Rate (CER) and accuracy as our primary evaluation metrics. Our final model achieved a CER of 3% and an accuracy of 97% on the test set.
-              ![ResNet50V2](https://github.com/user-attachments/assets/c55f5318-3e1b-49ec-9fa8-d33ecaf92781)
-               *ResNet50V2 performance throughout the epochs*
+<p align="center"><strong>5. Training Techniques:</strong></p>
+- **Optimizer**: We use the Adam optimizer with specific parameters for efficient training.
+- **Learning Rate Scheduler**: A cosine learning rate scheduler is employed to adjust the learning rate dynamically during training.
+- **Training Duration**: The model is trained across 70 epochs to ensure convergence and optimal performance.
+
+<p align="center"><strong>6. Evaluation Metrics:</strong></p>
+We use Character Error Rate (CER) and accuracy as our primary evaluation metrics. Our final model achieved a CER of 3% and an accuracy of 97% on the test set.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c55f5318-3e1b-49ec-9fa8-d33ecaf92781" alt="ResNet50V2" width="300"/>
+</p>
+*ResNet50V2 performance throughout the epochs*
+
    
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
