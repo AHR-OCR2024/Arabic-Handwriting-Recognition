@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/725887d7-2bd8-4832-8918-50ecfa5cf5d6)
 ![ضاد الرقمية أيقونة](https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition/assets/169726054/4bcbec06-9ac7-44a8-ad9c-dc3a7c6e13f4)
 
 
@@ -8,17 +8,12 @@ Welcome to the Arabic Handwriting Recognition project! This repository consolida
 
 This project is proudly made by:
 
-1. Abanoub Aaid
-2. Ahmed Nagah
-3. Ahmed Taha
-4. Ayman Saber
-5. Kerollos
-6. Mohamed Abdelfattah
-7. Mohamed Fathi
-8. Nada Asran
-9. Nada Mahmoud
-10. Rawan
-11. Reem Fouad
+| Ahmed Taha         | Ayman Saber        |
+| Ahmed Nagah        | Abanoub Aied       |
+| Kerollos Samir     | Mohamed Abdelfattah|
+| Mohamed Fathi      | Nada Asran         |
+| Nada Mahmoud       | Rawan Gamal        |
+| Reem Fouad         |                    |
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -26,6 +21,8 @@ This project is proudly made by:
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data](#data)
+- [Preprocessing](#preprocessing)
+- [AI Training](#aitraining)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
@@ -70,6 +67,59 @@ The dataset used in this project is included in the repository. It contains a va
 1. Download the `Data.rar` file.
 2. Extract the contents to the appropriate directory.
 
+## Preprocessing
+Preprocessing is a critical stage in the development of our Arabic handwriting recognition system. The goal is to enhance the quality of the input data to ensure accurate recognition. Here are the main steps involved in our preprocessing pipeline:
+
+1. **Image Acquisition**: We collect images of handwritten Arabic text from various sources, including scanned documents and photos taken by digital cameras.
+   ![Acquired Image](https://github.com/user-attachments/assets/4a9c7f02-2ae9-46b1-965b-0dbb305202ce)
+
+2. **Geometric Correction**: We correct distortions and warping in the images. Techniques like Hough Line Transform and DocTr (Document Image Transformer) are used to straighten the text lines.
+
+3. **Noise Removal**: We apply filters to remove noise and enhance the clarity of the text. This includes techniques like Gaussian blur and median filtering.
+  ![image](https://github.com/user-attachments/assets/5ff48966-40f4-498b-8923-cc5a144482c6)
+  *Unwarped and filtered image*
+
+
+5. **Segmentation**: We segment the images into paragraphs, lines, and individual characters. This involves methods like histogram projection and CRAFT (Character Region Awareness for Text Detection).
+  ![image](https://github.com/user-attachments/assets/667f307b-6df3-452e-92f8-c23e66cf040f)
+  *Segmented text using CRAFT*
+
+
+7. **Normalization**: We normalize the images to a fixed size (64x64) and rescale the pixel values to the range [0, 1] by dividing by 255.0.
+   ![Final Results](https://github.com/user-attachments/assets/1e22848e-7ee9-4b76-abee-00d69695c854)
+   *Example of Final Results*
+
+## AI Training
+
+The AI training phase involves developing and training deep learning models to recognize and digitize handwritten Arabic text. Here are the key components of our AI training process:
+
+1. **Prototype Model Experimentation**:
+   We experimented with three different architectures on a small portion of the data (15,477 Samples) at first to identify the most effective model for our Arabic handwriting recognition system. The comparison of the results is shown in the table below:
+
+   | Architecture   | CER  | Accuracy |
+   |----------------|------|----------|
+   | EfficientNet-B1| 7.3% | 92.7%    |
+   | VGG19          | 5.4% | 94.6%    |
+   | ResNet152      | 2.96%| 97.04%   |
+              ![ResNet152](https://github.com/user-attachments/assets/9bf2af20-2e08-446f-8042-abe3f27e161e)
+              *Resnet152 performance throughout the epochs*
+
+   
+2. **Dataset Preparation**: We use a combination of the Arabic Alphabet Character dataset and the KHATT dataset. The combined final dataset includes 108,619 samples.
+
+3. **Data Augmentation**: To improve the robustness of our model, we apply various data augmentation techniques, such as rotation, translation, and scaling.
+
+4. **Model Architecture**: We utilize the ResNet50V2 model, pre-trained on the Arabic Alphabet Character dataset. We then continue training on the KHATT dataset using advanced techniques.
+
+5. **Training Techniques**: 
+   - **Optimizer**: We use the Adam optimizer with specific parameters for efficient training.
+   - **Learning Rate Scheduler**: A cosine learning rate scheduler is employed to adjust the learning rate dynamically during training.
+   - **Training Duration**: The model is trained across 70 epochs to ensure convergence and optimal performance.
+
+6. **Evaluation Metrics**: We use Character Error Rate (CER) and accuracy as our primary evaluation metrics. Our final model achieved a CER of 3% and an accuracy of 97% on the test set.
+              ![ResNet50V2](https://github.com/user-attachments/assets/c55f5318-3e1b-49ec-9fa8-d33ecaf92781)
+               *ResNet50V2 performance throughout the epochs*
+   
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
 1. Fork the repository.
