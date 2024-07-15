@@ -1,5 +1,6 @@
-![ضاد الرقمية أيقونة](https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition/assets/169726054/4bcbec06-9ac7-44a8-ad9c-dc3a7c6e13f4)
-
+<p align="center">
+     <img src="https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition/assets/169726054/4bcbec06-9ac7-44a8-ad9c-dc3a7c6e13f4" alt="Digital-Ḍād" width="500"/>
+   </p>
 
 # Arabic Handwriting Recognition 🖋️
 
@@ -75,14 +76,14 @@ Preprocessing is a critical stage in the development of our Arabic handwriting r
 
 1. **Image Acquisition**: We collect images of handwritten Arabic text from various sources, including scanned documents and photos taken by digital cameras.
    <p align="center">
-     <img src="https://github.com/user-attachments/assets/4a9c7f02-2ae9-46b1-965b-0dbb305202ce" alt="Acquired Image" width="300"/>
+     <img src="https://github.com/user-attachments/assets/4a9c7f02-2ae9-46b1-965b-0dbb305202ce" alt="Acquired Image" width="400"/>
    </p>
 
 2. **Geometric Correction**: We correct distortions and warping in the images. Techniques like Hough Line Transform and DocTr (Document Image Transformer) are used to straighten the text lines.
 
 3. **Noise Removal**: We apply filters to remove noise and enhance the clarity of the text. This includes techniques like Gaussian blur and median filtering.
    <p align="center">
-     <img src="https://github.com/user-attachments/assets/5ff48966-40f4-498b-8923-cc5a144482c6" alt="Noise Removal" width="300"/>
+     <img src="https://github.com/user-attachments/assets/5ff48966-40f4-498b-8923-cc5a144482c6" alt="Noise Removal" width="400"/>
      <br>
      <em>Unwarped and filtered image</em>
    </p>
@@ -90,14 +91,14 @@ Preprocessing is a critical stage in the development of our Arabic handwriting r
 
 5. **Segmentation**: We segment the images into paragraphs, lines, and individual characters. This involves methods like histogram projection and CRAFT (Character Region Awareness for Text Detection).
    <p align="center">
-     <img src="https://github.com/user-attachments/assets/667f307b-6df3-452e-92f8-c23e66cf040f" alt="image" width="300"/>
+     <img src="https://github.com/user-attachments/assets/667f307b-6df3-452e-92f8-c23e66cf040f" alt="image" width="400"/>
    <br>
      <em>Segmented text using CRAFT</em>
    </p>
 
 7. **Normalization**: We normalize the images to a fixed size (64x64) and rescale the pixel values to the range [0, 1] by dividing by 255.0.
    <p align="center">
-     <img src="https://github.com/user-attachments/assets/1e22848e-7ee9-4b76-abee-00d69695c854" alt="Final Results" width="300"/>
+     <img src="https://github.com/user-attachments/assets/1e22848e-7ee9-4b76-abee-00d69695c854" alt="Final Results" width="400"/>
    <br>
      <em>Final Results</em>
    </p>
@@ -116,7 +117,7 @@ We experimented with three different architectures on a small portion of the dat
 | ResNet152      | 2.96%| 97.04%   |
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9bf2af20-2e08-446f-8042-abe3f27e161e" alt="ResNet152" width="300"/>
+  <img src="https://github.com/user-attachments/assets/9bf2af20-2e08-446f-8042-abe3f27e161e" alt="ResNet152" width="400"/>
    <br>
      <em>ResNet152 Performance Throughout the Epochs</em>
 </p>
@@ -139,7 +140,7 @@ We utilize the ResNet50V2 model, pre-trained on the Arabic Alphabet Character da
 We use Character Error Rate (CER) and accuracy as our primary evaluation metrics. Our final model achieved a CER of 3% and an accuracy of 97% on the test set.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c55f5318-3e1b-49ec-9fa8-d33ecaf92781" alt="ResNet50V2" width="300"/>
+  <img src="https://github.com/user-attachments/assets/c55f5318-3e1b-49ec-9fa8-d33ecaf92781" alt="ResNet50V2" width="400"/>
    <br>
      <em>ResNet50V2 (Pre-Trained on Alphabet) Performance Throughout the Epochs</em>
 </p>
@@ -147,7 +148,7 @@ We use Character Error Rate (CER) and accuracy as our primary evaluation metrics
 ## Full System Diagram
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/95e18c1f-969d-48c5-a584-85e50b45d467" alt="Diagram" width="300"/>
+  <img src="https://github.com/user-attachments/assets/95e18c1f-969d-48c5-a584-85e50b45d467" alt="Diagram" width="400"/>
    <br>
      <em>The Flow of Our System</em>
 </p>
@@ -155,7 +156,7 @@ We use Character Error Rate (CER) and accuracy as our primary evaluation metrics
 ## Digital-Ḍād ض-الرقمية
 Our application provides a variety of services and models:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5cbaed0c-9a78-4f2e-b6d7-f262328bf529" alt="MainPage" width="300"/>
+  <img src="https://github.com/user-attachments/assets/5cbaed0c-9a78-4f2e-b6d7-f262328bf529" alt="MainPage" width="600"/>
    <br>
      <em>Main Page of Our Application</em>
 </p>
@@ -163,7 +164,7 @@ Our application provides a variety of services and models:
 1. **Handwriting OCR**: Utilizing our model simply taking an image of a paragraph written by handwriting, preprocessing the paragraph, and finally performing ocr on the resulting segmented words or sub-words
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/557d9d83-c279-46c4-822f-666b5919275b" alt="OCRModel" width="300"/>
+  <img src="https://github.com/user-attachments/assets/557d9d83-c279-46c4-822f-666b5919275b" alt="OCRModel" width="600"/>
    <br>
      <em>Handwriting OCR Model</em>
 </p>
@@ -171,7 +172,7 @@ Our application provides a variety of services and models:
 2. **Exam Grading**: We pass questiong with their specific answers to the model, and utilizing our OCR methodology alongside a LLM with api, we scan the answers written by a student giving it a grade.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/de932111-2937-423b-9a42-c696a2706d58" alt="ExamGrader" width="300"/>
+  <img src="https://github.com/user-attachments/assets/de932111-2937-423b-9a42-c696a2706d58" alt="ExamGrader" width="600"/>
    <br>
      <em>Exam Grader Model</em>
 </p>
