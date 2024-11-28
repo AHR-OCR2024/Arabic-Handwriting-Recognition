@@ -50,7 +50,7 @@ pip install -r requirements.txt
 npm i
 ```
 
-Download the pretrained models from here (upload in progress)
+Download the pretrained models from [here](https://mega.nz/file/0NZlkYAY#lFYQzTWaotIOJ7tYZ5ufPLLbVUP1B5hydpL3y9aPik0) , Put them in Application/Backend/Models
 
 ## Usage
 To use the OCR system, follow these steps:
