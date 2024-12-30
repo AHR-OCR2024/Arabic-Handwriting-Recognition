@@ -46,7 +46,7 @@ To get started, clone the repository and install the required dependencies:
 ```bash
 git clone https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition.git
 cd Arabic-Handwriting-Recognition/Application
-pip install -r requirements.txt
+pip install -r install-requirements.txt
 npm i
 ```
 
