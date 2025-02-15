@@ -1,3 +1,5 @@
+🚧 This repo is still incomplete and is under construction 🚧
+
 <p align="center">
      <img src="https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition/assets/169726054/4bcbec06-9ac7-44a8-ad9c-dc3a7c6e13f4" alt="Digital-Ḍād" width="500"/>
    </p>
@@ -202,6 +204,3 @@ We would like to thank all contributors and the community for their support and 
 Feel free to reach out with any questions or feedback. Let's make Arabic handwriting recognition more accessible and accurate together!
 
 🌟 Happy Coding! 🌟
-
-
-🚧 This repo is still incomplete and is under construction 🚧
