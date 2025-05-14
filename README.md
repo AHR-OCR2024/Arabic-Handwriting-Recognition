@@ -1,4 +1,4 @@
-🚧 This repo is still incomplete and is under construction 🚧
+# ⚠️ This repo is incomplete, Please check [Our Thesis](https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition/blob/main/AHR-Thesis.pdf) for more info.
 
 <p align="center">
      <img src="https://github.com/AHR-OCR2024/Arabic-Handwriting-Recognition/assets/169726054/4bcbec06-9ac7-44a8-ad9c-dc3a7c6e13f4" alt="Digital-Ḍād" width="500"/>
